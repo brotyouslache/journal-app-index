@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 杂志专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f8f8f8;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e1e1e;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.4rem 1.6rem 3.2rem;
+    }
+
+    /* 首页横幅 — 简洁灰度 */
+    .hero {
+      margin-bottom: 2.8rem;
+      padding: 3.2rem 0 1.2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .hero-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #7a7a7a;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+      color: #191919;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: #5c5c5c;
+      font-weight: 380;
+      max-width: 85%;
+    }
+
+    /* 背景说明 — 窄栏 */
+    .context {
+      margin-bottom: 3.2rem;
+      padding: 1.2rem 0;
+      border-left: 2px solid #d4d4d4;
+      padding-left: 1.4rem;
+    }
+
+    .context p {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      margin-bottom: 0.5rem;
+    }
+
+    .context strong {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    /* 三段自然介绍 card 风格 */
+    .feature-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .feature-item {
+      padding: 0.2rem 0;
+    }
+
+    .feature-item h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #222;
+      margin-bottom: 0.4rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.25rem;
+      display: inline-block;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      margin-top: 0.3rem;
+    }
+
+    .feature-item .meta-note {
+      font-size: 0.8rem;
+      color: #7f7f7f;
+      margin-top: 0.6rem;
+    }
+
+    /* 链接内嵌样式 */
+    a {
+      color: #1e1e1e;
+      text-decoration: underline;
+      text-decoration-color: #cbcbcb;
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    a:hover {
+      color: #000;
+      text-decoration-color: #7a7a7a;
+    }
+
+    /* 页尾访问提示 */
+    .footer-visit {
+      margin-top: 3.6rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .footer-visit .foot-note {
+      font-size: 0.85rem;
+      color: #5c5c5c;
+    }
+
+    .footer-visit .foot-cta {
+      font-size: 0.95rem;
+      color: #2a2a2a;
+    }
+
+    .signature-line {
+      font-size: 0.75rem;
+      color: #9a9a9a;
+      margin-top: 2rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      .container {
+        padding: 1.6rem 1.2rem 2.4rem;
+      }
+      .hero-title {
+        font-size: 1.9rem;
+      }
+      .hero-sub {
+        font-size: 0.9rem;
+        max-width: 100%;
+      }
+      .context {
+        padding-left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- 首页横幅 -->
+  <div class="hero">
+    <div class="hero-label">专题 · 持续关注</div>
+    <h1 class="hero-title">再次打开，如常相见</h1>
+    <div class="hero-sub">一份关于收藏、回访与日常使用的简洁记录</div>
+  </div>
+
+  <!-- 背景说明（再次访问与收藏的语境） -->
+  <div class="context">
+    <p><strong>为何要收藏一个服务入口？</strong> 数字工具的价值，往往不在初次浏览时的惊艳，而在频繁回访中逐渐显现的可靠。将 <a href="https://app-index-aiyouxi.com.cn">爱游戏</a> 加入浏览器书签或桌面快捷方式，便是为日常使用保留一条稳定的路径——无需每次重新搜索，也无需在多个页面间跳转。习惯的养成，往往始于一个固定的锚点。</p>
+    <p>过去几个月，我们观察到不少用户通过直接输入网址或从收藏夹启程，完成从资讯查阅到工具调用的连贯操作。对这部分人而言，收藏不只是记忆辅助，更是工作流的起点。</p>
+  </div>
+
+  <!-- 三段自然介绍 — 侧重场景与持续性 -->
+  <div class="feature-grid">
+    <div class="feature-item">
+      <h2>浏览与检索的日常</h2>
+      <p>针对游戏内容的索引与推荐，<a href="https://app-index-aiyouxi.com.cn">爱游戏</a> 在信息结构和加载效率上做了针对性调整。页面标题层级清晰，分类锚点固定，适合快速定位感兴趣的主题。无论是查攻略、看测评还是了解新作动态，你都能在三次点击以内接触到核心内容。信息密度被控制在合理范围，避免过度沉浸导致的决策疲劳。</p>
+      <div class="meta-note">—— 适合碎片时间或集中研究</div>
+    </div>
+
+    <div class="feature-item">
+      <h2>收藏夹里的长期主义</h2>
+      <p>一个被持续维护的站点，与一个静态页面，区别在于内容的生命迹象。定期更新的专题、修正后的链接、优化过的交互细节，这些都是值得回访的理由。如果你在三个月前收藏过 <a href="https://app-index-aiyouxi.com.cn">爱游戏</a>，或许已经注意到首页结构的微调——更窄的正文阅读区、更克制的色彩对比、以及更直接的分类导航。这些改动并非为了炫目，而是为了降低每次访问的认知负荷。</p>
+    </div>
+
+    <div class="feature-item">
+      <h2>关注，但不被推送裹挟</h2>
+      <p>在信息爆炸的时代，保持关注的方式可以很安静。没有弹窗横幅，没有红点催促，<a href="https://app-index-aiyouxi.com.cn">爱游戏</a> 的更新以自然的方式出现在你主动打开的时刻。你决定何时浏览、阅读多深、何时离开。这种节奏更接近阅读一本杂志——每期内容就在那里，等你抽出十五分钟翻看。对于不想被算法和推送频繁打扰的用户，这或许是一种更舒适的持续在场。</p>
+    </div>
+  </div>
+
+  <!-- 页尾访问提示 -->
+  <div class="footer-visit">
+    <div class="foot-note">如果你尚未将地址固定，不妨现在标记一次。</div>
+    <div class="foot-cta">直接访问 <a href="https://app-index-aiyouxi.com.cn">爱游戏</a>，或将其加入浏览器书签栏——这是最轻量的关注方式。</div>
+    <div class="signature-line">杂志专题 · No. 042 · 持续关注</div>
+  </div>
+</div>
+</body>
+</html>
