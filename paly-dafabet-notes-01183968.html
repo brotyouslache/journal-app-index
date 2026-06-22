@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dafabet · 平台简介与常见问题</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #1e2a3a;
+    }
+
+    /* ===== hero 区 ===== */
+    .hero {
+      background: linear-gradient(145deg, #0b121f 0%, #1b2a41 100%);
+      color: #eceff4;
+      padding: 4rem 2rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #f4f6f9;
+      clip-path: ellipse(70% 100% at 50% 100%);
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .hero .subtitle {
+      font-size: 1.15rem;
+      opacity: 0.85;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .hero .tagline {
+      display: inline-block;
+      margin-top: 1.8rem;
+      padding: 0.4rem 1.6rem;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 40px;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    /* ===== 浅色正文区 ===== */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 3rem 0 2.5rem;
+    }
+
+    /* ===== 强调色 ===== */
+    a {
+      color: #26648e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #26648e;
+    }
+
+    .accent-link {
+      color: #26648e;
+      font-weight: 500;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: #1e2a3a;
+      letter-spacing: -0.01em;
+    }
+
+    .section-title span {
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      border-bottom: 3px solid #26648e;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.6rem 1.4rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #1a2c3f;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #3c4a5a;
+    }
+
+    .text-block {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      margin-bottom: 1.2rem;
+    }
+
+    .text-block p {
+      margin-bottom: 1.2rem;
+    }
+
+    .text-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #dde2e9;
+      padding: 1.2rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+      color: #0f1f31;
+    }
+
+    .faq-answer {
+      color: #445566;
+      font-size: 0.95rem;
+    }
+
+    .bottom-links {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 2.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .bottom-links a {
+      color: #1e2a3a;
+      font-size: 0.95rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .bottom-links a:hover {
+      border-bottom-color: #26648e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      font-size: 0.85rem;
+      color: #6f7d8c;
+      border-top: 1px solid #dce2ea;
+      margin-top: 1.5rem;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.9rem; }
+      .hero { padding: 3rem 1.2rem 4rem; }
+      .text-block { padding: 1.3rem 1.2rem; }
+      .bottom-links { flex-direction: column; align-items: center; gap: 0.8rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- hero 区 -->
+  <header class="hero">
+    <h1>关于 dafabet · 从平台结构到实用提示</h1>
+    <p class="subtitle">一份面向信息整合与场景理解的概述，帮助用户快速了解 dafabet 的基本特点与常见问题方向。</p>
+    <span class="tagline">知识型 · 功能简述</span>
+  </header>
+
+  <div class="container">
+
+    <!-- 优势区：卡片式特点 -->
+    <section>
+      <h2 class="section-title"><span>平台特点简述</span></h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>模块化页面</h3>
+          <p>功能区划分清晰，从账户管理到内容展示均有独立入口，便于使用者快速定位。</p>
+        </div>
+        <div class="card">
+          <h3>多语言支持</h3>
+          <p>提供包括中文在内的多种语言界面，降低阅读门槛，适配不同地区用户习惯。</p>
+        </div>
+        <div class="card">
+          <h3>常见服务集成</h3>
+          <p>将常用功能集成于统一面板，减少跳转层级，提升操作连贯性。</p>
+        </div>
+        <div class="card">
+          <h3>响应式适配</h3>
+          <p>移动端与桌面端布局均经过调整，保证在不同屏幕尺寸下均有可用性。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：从主题内容展开 -->
+    <section>
+      <h2 class="section-title"><span>核心功能与使用场景</span></h2>
+      <div class="text-block">
+        <p>任何在线平台的价值都体现在其结构与引导的清晰度上。<a href="https://paly-dafabet.com" style="border-bottom: 1px solid #26648e;">dafabet</a> 将常用入口、信息展示与账户相关功能整合在同一个框架中，使用者无需在多个页面间反复切换即可完成大部分操作。无论是初次接触还是日常使用，这种设计都能缩短适应时间。</p>
+        <p>从实际场景来看，用户常常需要快速了解平台规则、更新个人资料或查看历史记录。如果页面导航层级过深，效率就会下降。而 dafabet 的布局逻辑倾向于将高频功能前置，并辅以清晰的分类标签，尽可能减少「找功能」的时间成本。</p>
+        <p>此外，跨设备访问的一致性是很多使用者关注的重点。通过响应式设计，dafabet 在不同终端上保持核心模块可见，不会因为屏幕变小而丢失关键入口。</p>
+      </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+      <h2 class="section-title"><span>常见问题摘要</span></h2>
+      <div class="text-block" style="padding: 0.5rem 1.8rem 0.2rem;">
+        <div class="faq-item">
+          <div class="faq-question">如何找回账户密码？</div>
+          <div class="faq-answer">登录页面通常设有「忘记密码」链接，按照邮件或短信验证流程重置即可。建议提前绑定备用邮箱或手机号。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">平台支持哪些支付方式？</div>
+          <div class="faq-answer">主流借记卡、信用卡以及部分电子钱包均在支持范围内。具体列表可在存款页面查看，各通道可能有单笔限额。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">账户验证需要提供哪些材料？</div>
+          <div class="faq-answer">通常需要身份证明文件（护照或身份证）以及近期的地址证明。审核周期因提交时间而异，建议一次性提交清晰扫描件。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">如何联系客服团队？</div>
+          <div class="faq-answer">平台内设在线客服入口，也提供电子邮件支持。高峰时段等待时间可能延长，建议错峰联系。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <section style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <div class="bottom-links">
+        <a href="https://paly-dafabet.com">dafabet</a>
+        <a href="#">使用条款</a>
+        <a href="#">隐私政策</a>
+        <a href="#">帮助中心</a>
+        <a href="#">关于我们</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>本页面仅为信息介绍用途，不构成任何建议或引导。所有操作请以实际平台规则为准。</p>
+  </footer>
+
+</body>
+</html>
